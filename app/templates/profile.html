@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Character Profile</h1>
+
+<div class="container">
+    <div class="container-character">
+        <img src="{{ personaje['image'] }}" alt = "Character image">
+        <p>Nombre: {{ personaje['name'] }}</p>
+        <p>Estado: {{ personaje['status'] }}</p>
+        <p>Género: {{ personaje['gender'] }}</p>
+    </div>
+    <a href="{{ url_for('rick_y_morty.index') }}">Back to main page</a>
+</div>
+
+{% endblock content %}

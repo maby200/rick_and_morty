@@ -1,4 +1,4 @@
-class Personajes:
+class Personaje:
     def __init__(self, id, name,status,gender,image):
         self.id = id
         self.name = name
